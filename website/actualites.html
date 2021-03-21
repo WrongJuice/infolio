@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>	
+            <a href="presentation_prog.html">Programmation</a>		
+            <a href="presentation_bd.html">Base de données</a>		
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html">Métiers</a>
+            <a href="actualites.html" class="PageActuelle">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>	
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>	
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <a href="entreprises.html">
+         <div class="image_actu1">
+            <!-- ACTU1 --> 
+         </div>
+      </a>
+      <a href="formations.html">
+         <div class="image_actu2">
+            <!-- ACTU2 --> 
+         </div>
+      </a>
+      <a href="marche.html">
+         <div class="image_actu3">
+            <!-- ACTU3 --> 
+         </div>
+      </a>
+      <a href="technologies.html">
+         <div class="image_actu4">
+            <!-- ACTU4 --> 
+         </div>
+      </a>
+   </body>
+</html>

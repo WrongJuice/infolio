@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>			
+            <a href="presentation_prog.html">Programmation</a>		
+            <a href="presentation_bd.html">Base de données</a>		
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html" class="PageActuelle">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>	
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>		
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="interview2_banniere">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <div class="interview">
+         <article>
+            <br><br><br><br>
+            <center>
+               <h3 class='introduction'><i>Afin de mieux comprendre les métiers de l'informatique, notre équipe décida d'aller 
+                  à la rencontre de professionels pour cerner au mieux leur quotiden, cette page est dédiée à l'interview
+                  d'Alexis Platon, 24 ans, employé à Proservia.</i>
+               </h3>
+            </center>
+            <br><br>
+            <div class="reseaux">
+               <a href="https://fr-fr.facebook.com/Proservia/" target="_blank"><img src="images/illustrations/facebook.png" alt="logo_facebook" class="logo_reseaux"></a>
+               <a href="https://twitter.com/proservia" target="_blank"> <img src="images/illustrations/twitter.png" alt="logo_twitter" class="logo_reseaux"> </a>
+               <div class="youtube">
+                  <img src="images/illustrations/youtube.png" alt="logo_youtube" class="logo_reseaux logo_youtube">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/haDrMiTWTtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_youtube"></iframe>
+               </div>
+            </div>
+            <h4>Comment définir votre métier ? En quoi consiste-t-il ? </h4>
+            <p>
+              Je suis technicien d’exploitation, je travaille dans une société de services qui s’appelle Proservia et qui a été rachetée par ManPower, dans cette société, je suis en charge de la supervision des équipements réseau de la MACIF, cela consiste à s’assurer à l’aide de tests et procédures à vérifier que tout leur réseau fonctionne bien et que les utilisateurs de la MACIF puissent utiliser leurs outils correctement. Si une erreur est constatée, j’utilise des procédures pour régler le problème à mon niveau, si je ne peux pas, je déclare un incident via un outil de ticketing pour le reléguer à un groupe qui pourra s’en occuper.
+            </p>
+
+            <h4>Quelles sont vos études ? Qu’est-ce qui vous a fait choisir ce métier ? </h4>
+            <p>
+              BAC PRO Systèmes électroniques et numériques
+              BTS SIO option SISR (réseau).
+              Le milieu où j’ai grandi a hautement influencé mon parcours scolaire. Mon père en est la cause, souvent occupé à réparer des ordinateurs et autres tâches dans le domaine.
+              Bien que je préfère la programmation, j’ai au final choisi le réseau par un concours de circonstances dans mes études.
+            </p>
+
+            <h4>Qu’aimez-vous le plus dans le métier ? </h4>
+            <p>
+              Je travaille dans un open space, l’ambiance de travail est donc ce que je préfère.
+            </p>
+
+            <h4>Qu’aimez-vous le moins dans le métier ?</h4>
+            <p>
+              J’ai des horaires très variables (les 3x8) et avec des risques de travailler le week-end ou les jours fériés, j’espère que ma situation évoluera.
+            </p>
+
+            <h4>Avez-vous éprouvé des difficultés à trouver du travail ? </h4>
+            <p>
+              Oui, je travaille depuis peu, j’ai mis presque quatre ans à trouver du travail dans mon domaine à cause du manque d’expérience, je n’ai eu qu’un CDD dans cet intervalle ainsi que du travail en intérim.
+            </p>
+
+            <h4>Quelle importance accordez-vous au travail d’équipe ? </h4>
+            <p>
+              Dans mon job, le travail d’équipe est primordial, la communication est la clé afin de s’aider ainsi que reléguer les informations à mes collègues afin qu’ils soient au courant des situations et des problèmes.
+            </p>
+
+            <h4>Quels types de problèmes résolvez-vous ?</h4>
+            <p>
+              Cela dépend des procédures, si je peux les résoudre ou non, si non, on escalade l’incident à un niveau supérieur, sinon nous avons des procédures avec un outil de supervision pour nous aider.
+            </p>
+
+            <h4>Quel est votre salaire actuel ? </h4>
+            <p>
+              1&nbsp;600€ brut, soit 1&nbsp;280€ net par mois + une prime de travail si le client est satisfait (jusqu’à 300€) tous les 3 mois.
+            </p>
+
+            <h4>Quelles débouchées de travail existe au sein de votre domaine et quelles évolutions pouvez-vous envisagez ? </h4>
+            <p>
+              Cela dépend des boîtes, si elles proposent des formations ou opportunités d’évolution.
+              Dans l’informatique, la majorité des demandes semblent êtres dans le développement et la programmation, le réseau grandira peu et encore moins le travail de technicien d’exploitation.
+            </p>
+
+            <h4>Avez-vous, au fil du temps passé dans votre entreprise, gagné des nouvelles compétences? Quelles qualités avez-vous découvertes chez vous?</h4>
+            <p>
+              J’ai beaucoup gagné en ponctualité grâce à ce besoin de cohésion d’équipe.
+            </p>
+
+            <h4>Conclusion :</h4>
+            <p>
+              M. Platon est donc technicien d'exploitation dans une entreprise avec un cadre de travail qui lui convient plutôt bien. Il est régulièrement confronté à toutes sortes de problèmes qu'il doit résoudre afin de satisfaire au maximum le client. Cependant, il espère une évolution dans son entreprise et, de façon général, dans sa carrière.
+            </p>
+            <br><br><br><br><br><br><br>
+         </article>
+      </div>
+      <footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+   </body>
+</html>

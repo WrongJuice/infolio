@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>	     
+            <a href="presentation_prog.html">Programmation</a>      
+            <a href="presentation_bd.html">Base de données</a>       
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html" class="PageActuelle">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>      
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="image_liste">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <center>
+         <div class="img_presentation">
+            <div class="ligne1">
+               <a href="fiche_bd.html" >
+                  <div class="img_metier metier1"> </div>
+               </a>
+               <a href="fiche_devweb.html">
+                  <div class="img_metier metier2"> </div>
+               </a>
+            </div>
+            <div>
+               <a href="fiche_hacker.html">
+                  <div class="img_metier metier3"> </div>
+               </a>
+               <a href="fiche_data.html">
+                  <div class="img_metier metier4"></div>
+               </a>
+            </div>
+            <div>
+               <a href="fiche_prog.html">
+                  <div class="img_metier metier5"></div>
+               </a>
+               <a href="redirection.html">
+                  <div class="img_metier metier_alea"></div>
+               </a>
+            </div>
+         </div>
+      </center>
+   </body>
+</html>

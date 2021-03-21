@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>	     
+            <a href="presentation_prog.html">Programmation</a>      
+            <a href="presentation_bd.html" class="PageActuelle">Base de données</a>     
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>      
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="imageBD">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <div class="presentation">
+         <br><br>
+         <div class="bloc1_pres">
+            <img class="image_presBD1" src="images/illustrations/image_bd1.jpg" alt="BD">
+            <p class="P1_pres"> Une <b>base de données</b>, (ou <i>DataBase</i> en anglais) permet d'enregistrer des données de façon <b>organisée et hiérarchisée</b>. Ces données, ou informations, sont consultables, modifiables et capables d'être mise à jour à tout moment. Elles sont triés dans des tables à travers <b>la database</b> afin de fonctionner ensemble et d'être plus facilement traitées. Ces base de données sont très présentes dans les entreprises, voir indispensables.</p>
+         </div>
+         <div class="bloc2_pres">
+            <p class="P2_pres"> Un <b>SGBD</b> permet d'inscrire, modifier ou supprimer les informations de la base de données. Il comporte des mécanismes pour assurer la cohérence des informations, éviter les pannes et permettre son utilisation par d'autres logiciels. Le <b>SQL </b>est utilisé comme langage pour travailler sur cette base de données et ainsi rechercher, ajouter, modifier ou supprimer des données dans les bases de données relationnelles. <br>
+            <b>Un exemple !</b> Pour stocker ses clients, produits, commandes, livreurs, livraisons, transactions et autres données, tout site de e-commerce a besoin d'une base de données.
+            </p>
+            <img class="pres_icon database_icon" src="images/illustrations/database.png" alt="icon database">
+         </div>
+         <div class="bloc3_pres">
+            <p class="P3_pres"> Pour travailler dans ce domaine, un bac S ou STI2D est fortement conseillé. Après un BAC+2 en informatique (BTS SIO ou DUT Informatique), il existe plusieurs licences professionnelles permettant d'accéder à ce métier :
+               <br> <b> Gestion et traitement informatique de données massives
+               <br>  Administrateur de réseaux et de base de données 
+               <br>  Gestion et traitement statistique de base de données 
+               <br>  Base de données </b><br>
+               Les titulaires d'un BAC+5 (Master MIAGE ou diplôme d'une école d'ingénieur) sont cependant les plus recherchés. Une expérience de quelques années de développement est recommandée.
+            </p>
+            <div class="anecdote">
+               <center class="anecdote_titre"> Anecdote</center>
+               <p class="anecdote_p"> Le terme database (base de données) est apparu en 1964 pour désigner une collection d'informations partagées par différents utilisateurs d'un système d'informations militaire.</p>
+            </div>
+         </div>
+         <div class="bloc4_pres">
+            <p> Tu souhaites devenir administrateur en base de données ? <br> <b>Va voir notre fiche métier : </b></p>
+            <a href="fiche_bd.html">
+               <div class="pres_ficheBD"></div>
+            </a>
+         </div>
+      </div>
+
+      <footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+   </body>
+</html>

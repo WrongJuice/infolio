@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>		
+            <a href="presentation_prog.html">Programmation</a>		
+            <a href="presentation_bd.html">Base de données</a>		
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html" class="PageActuelle">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>	
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>		
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="imageProg">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <center>
+         <div class="conteneurPrincipaleFicheMetier">
+            <h1 id="grostitrePA">Programmeur analyste</h1>
+            <p class="resumeFiche">L'analyste-programmeur, aussi appelé "développeur", est la personne (ou le groupe de personne) qui met au point les applications/systèmes/logiciel pour une entreprise. Il gère aussi le maintien de ces derniers.</p>
+            <div class="conteneurCategoriesFichesMetiers">
+               <div class="uneCategorieInformationMetier">
+                  <div class="titresFichesMetiersConteneurs">
+                     <h2>Missions</h2>
+                  </div>
+                  <div class="conteneurInfoFiche">
+                     <p><b>I - Développer</b><br>
+                     L'analyste programmeur est chargé de concevoir une partie ou l'intégralité d'un programme commandé par un client. Il est sous la direction d'un chef de projet et doit répondre à un cahier des charges pour chaque missions. Il doit aussi créer la documentation d'utilisation de son logiciel et doit, par la suite, la fournir au client avec ce dernier.<br>
+                     <br><b>II - Maintenir / corriger</b><br>
+                     Lorsqu'il ne s'agit pas d'un nouveau projet, l'analyste-programmeur est chargé de la maintenance ainsi que de la mise à jour de vieux logiciels, c'est à dire qu'il corrige et améliore.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="uneCategorieInformationMetier">
+                  <div class="titresFichesMetiersConteneurs">
+                     <h2>Formations</h2>
+                  </div>
+                  <div class="conteneurInfoFiche">
+                     <p>Après un Bac S ou STI2D, il existe différentes formations dans l'informatique pour accéder au métier de programmeur analyste (DUT, BTS, Licence, Prépa). Même si les premières offres d'emploi s'ouvrent au Bac&nbsp;+2, c'est plus souvent au Bac&nbsp;+3, après une licence professionnelle qu'elles sont le plus présentes. Les plus privilégiés sont les licences en développement et en web. Pour les ingénieurs, un Bac&nbsp;+5 est systématiquement demandé.</p>
+                     <img src="images/illustrations/progFormations.jpg" alt="Les formations pour devenir administrateur en base de données">
+                  </div>
+                  
+               </div>
+
+               <div class="uneCategorieInformationMetier">
+                  <div class="titresFichesMetiersConteneurs">
+                     <h2>Compétences</h2>
+                  </div>
+                  <div class="conteneurInfoFiche">
+                     <ul class="listeFiche">
+                        <li>Savoir concevoir, gérer et organiser</li>
+                        <li>Autonomie</li>
+                        <li>Travail d'équipe</li>
+                        <li>Analyse</li>
+                        <li>Rigueur</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="uneCategorieInformationMetier">
+                  <div class="titresFichesMetiersConteneurs">
+                     <h2>Évolution</h2>
+                  </div>
+                  <div class="conteneurInfoFiche">
+                     <p>Les évolutions sont diverses pour ce métier, le plus courant est d'évoluer vers un poste de cadre en développement ou chef de projet informatique mais ce métier permet aussi de se diriger vers des postes de consultant logiciel, testeur et bien d'autres.</p>
+                  </div>
+               </div>
+
+               <div class="uneCategorieInformationMetier">
+                  <div class="titresFichesMetiersConteneurs">
+                     <h2>Salaire</h2>
+                  </div>
+                  <div class="conteneurInfoFiche">
+                     <p>Le salaire d'un programmeur-analyste varie entre 25&nbsp;000€ et 30&nbsp;000€ pour un programmeur junior et atteint en moyenne de 40&nbsp;000€ à 50&nbsp;000€ pour un programmeur senior.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </center>
+      <footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+   </body>
+</html>

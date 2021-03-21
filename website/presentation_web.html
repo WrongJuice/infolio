@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>	 
+            <a href="presentation_prog.html">Programmation</a>      
+            <a href="presentation_bd.html">Base de données</a>       
+            <a href="presentation_web.html" class="PageActuelle">Web</a>
+            <a href="liste_metiers.html">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>      
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="imageWeb">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <div class="presentation">
+         <br><br>
+         <div class="bloc1_pres">
+            <img class="imageWeb1" src="images/illustrations/image_web1.jpg" alt="Web">
+            <p class="P1_pres"> En 1989, Tim Berners-Lee, un ingénieur anglais du CERN créer le <b>World Wide Web</b> (WWW). Originalement conçu pour partager des informations entre scientifiques, On connait aujourd'hui le web comme un regroupement de sites internet accessibles par tous à travers le monde. Les sites sont accessibles via des protocoles <b>HTTP</b> ou des <b>URL</b>. La structure de ces fichiers repose sur un langage <b>HTML</b>, <b>CSS</b>, <b>Javascript</b> et bien d'autre.</p>
+         </div>
+         <div class="bloc2_pres">
+            
+            <p class="P2_pres"> Par exemple, vous êtes en train de lire un paragraphe sur une page web faites de toutes pièces par <b>notre équipe</b> ! En effet <b>le choix du texte et du fond</b>, des éléments que vous pouvez voir sont déterminés par un code <b><i>HTML</i></b> tandis que les <b>couleurs</b> du site et sa <b>mise en page</b> sont gérées par un document <b><i>CSS</i></b>. <br>
+            Trop flou ? Faites un clic droit sur notre page et demandez d'<b>inspecter l'élément ! </b> 
+            </p>
+            <img class="pres_icon" src="images/team.png" alt="icon Web">
+         </div>
+         <div class="bloc3_pres">
+            <p class="P3_pres"> La <b>création d'un site web</b> demande aux créateurs de s'attribuer plusieurs rôles. Les deux principaux sont:
+               <br><br> <b><u>Designer web</u></b>: Il est en charge de l'esthétique du site, du choix des couleurs, des polices (plus généralement de <b>la charte graphique</b>) ainsi que de toute la mise en forme du site. Pour ce genre de métier il faut envisager une formation dans une <b>école de web design</b>, généralement intégrées dans des écoles de communication.<br><br><b><u>Développeur web</u></b>: Le développeur web doit faire en sorte que les plans et designs du web designer deviennent utilisables sur un vrai site internet. Il crée l'<b>interaction</b> entre les éléments du site et les visiteurs. Pour en savoir plus sur ce métier, il suffit de cliquer sur notre <b>fiche métier</b> ci-dessous.
+            </p>
+            <div class="anecdote">
+               <center class="anecdote_titre"> Anecdote</center>
+               <p class="anecdote_p"> Le plus vieux site web encore en ligne aujourd'hui est <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">celle-ci</a>. Elle fut créée par Berners-Lee et est constituée seulementd'un sommaire expliquant ses fonctions ainsi que les peronnes ayant travaillé sur cette page.</p>
+            </div>
+         </div>
+         <div class="bloc4_pres">
+            <p> Tu souhaites devenir développeur web ? <br> <b>Va voir notre fiche métier : </b></p>
+            <a href="fiche_devweb.html">
+               <div class="pres_ficheWeb"></div>
+            </a>
+         </div>
+      </div>
+
+      <footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>	      
+            <a href="presentation_prog.html">Programmation</a>      
+            <a href="presentation_bd.html">Base de données</a>       
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>      
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="image_mentions_legale">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <center>
+         <u>
+            <h2 class="mention_legale_titre">Qu'est-ce qu'une mention légale ?</h2>
+         </u>
+      </center>
+      <div class="quoi_mention_legale">
+         En France, les sites internet doivent se soumettre à des obligations légales pour être conforme et pour respecter les différentes lois sur l'informatique en vigueur. Le lien suivant vous emmènera vers le site du gouvernement français listant ces 
+         <a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F31228" class="mention_legale_lien"><b>mentions obligatoires en France (2018)</b></a>
+         <center>
+            <h3>Mentions légales propres au site :</h3>
+         </center>
+         <lu>
+            <li class="mention_legale_puce1">créé par : Tom Texier, Samuel Platon, Bixente Gellé, Alfred Gaillard, Clément Perraud.
+            </li>
+            <li class="mention_legale_puce1">
+               Adresse de l'IUT informatique : 15 Rue François de Vaux de Foletier, 17000 La Rochelle
+            </li>
+            <li class="mention_legale_puce1">Numéro de téléphone de l'IUT informatique : 05&nbsp;46&nbsp;51&nbsp;39&nbsp;00
+            </li>
+            <li class="mention_legale_puce1">Autres informations pour nous contacter : <a href="qui_sommes_nous.html" class="mention_legale_lien"><b>cliquez-ici</b></a>
+            </li>
+         </lu>
+         <center>
+            <h3>Attention :</h3>
+         </center>
+         <p>Ce site web est en constante évolution, les mentions légales peuvent donc changer, nous vous avertirons donc si ces dernières reçoivent des modifications.</p>
+         <center>
+            <h3>Plus d'information :</h3>
+            <lu class="test">
+               <li class="mention_legale_puce2"><a href="cookies.html" class="mention_legale_lien">Les cookies</a></li>
+               <li class="mention_legale_puce2"><a href="confidentialite.html" class="mention_legale_lien">Page de confidentialité</a></li>
+            </lu>
+         </center>
+      </div>
+      <br> <br>
+      <footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+   </body>
+</html>

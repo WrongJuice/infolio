@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>InFolio</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+		<link rel="shortcut icon" href="images/icon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+		<div class="topnav" id="myTopnav">
+			<nav>
+	            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>	
+	            <a href="presentation_prog.html">Programmation</a>		
+	            <a href="presentation_bd.html">Base de données</a>		
+	            <a href="presentation_web.html">Web</a>
+	            <a href="liste_metiers.html">Métiers</a>
+	            <a href="actualites.html">Actualités</a>
+	            <a href="interviews.html">Interviews</a>
+	            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>	
+	            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	            <i class="fa fa-bars"></i>
+	            </a>		
+	        </nav>
+		</div>
+		<script>
+        function myFunction(){
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav"){
+				x.className += " responsive";
+			}else{
+				x.className = "topnav";
+			}
+		}
+		</script>
+      	<div id="diapo">
+	        <div id="diapo-container">
+				<img src="images/diaporama/1.png" alt="img1"/>
+				<img src="images/diaporama/2.png" alt="img2"/>
+				<img src="images/diaporama/3.png" alt="img3"/>
+				<img src="images/diaporama/4.jpg" alt="img4"/>
+				<img src="images/diaporama/5.png" alt="img5"/>
+				<img src="images/diaporama/6.png" alt="img6"/>
+				<img src="images/diaporama/7.png" alt="img7"/>
+				<img src="images/diaporama/8.png" alt="img8"/>
+				<img src="images/diaporama/9.png" alt="img9"/>
+				<img src="images/diaporama/10.png" alt="img10"/>
+			</div>
+		</div>
+		<center>
+			<div class="index">
+				<h2 class="titre_index">Notre Projet</h2>
+				<p class="p_index"> L'équipe d'Infolio est fière de vous présenter la finalisation du projet du semestre 1 <br> qui a pour but de vous renseigner sur les diverses possiblitées que vous offrent l'informatique, <br> <a href="liste_metiers.html" class="lien_index"> <em> ses métiers </em></a>, <a href="actualites.html" class="lien_index"> <em> actualités récentes </em></a>, <a href="interviews.html" class="lien_index"> <em> interviews professionnelles </em></a> ainsi que les <a href="formations.html" class="lien_index"><em>formations à suivre</em></a>.</p>
+				<div class="logo_index"><!-- LOGO DE l'INDEX--></div>
+				<h3 class="titre_index"><b>Alors n'hésitez pas <a href="contact.html" class="lien_contact">à nous contacter</a> et découvrez vite toutes nos rubriques !</b><br></h3>
+        		<h3 class="titre_index"><b>Retrouvez ici <a href="sources.html" class="lien_sources">toutes nos sources</a>.</b><br></h3>
+			</div>
+		</center>
+		<footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+-
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+	</body>
+</html>

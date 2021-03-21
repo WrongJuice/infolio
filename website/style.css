@@ -1,0 +1,2064 @@
+/*
+
+HEADER : #192A3D
+TEXTE : BLANC
+TEXTE HOVER : #96C6FD OU YELLOW
+BARRE HOVER LI : #5A7697
+
+
+MODE JOUR :
+BODY : white
+FOOTER : #192A3D
+
+MODE NUIT :
+BODY : #303030
+FOOTER : black
+
+
+*/
+
+/******************************POLICES LOCALES*******************************/
+
+@font-face {
+	font-family: "Kraash";
+	src: url('polices/Kraash.ttf');
+}
+
+@font-face {
+	font-family: "Glitch";
+	src: url('polices/Glitch.otf');
+}
+
+@font-face {
+	font-family: "Bandes";
+	src: url('polices/Bandes.ttf');
+}
+
+@font-face {
+	font-family: "Bellerose";
+	src: url('polices/Bellerose.ttf');
+}
+
+@font-face {
+	font-family: "Code";
+	src: url('polices/Code.ttf');
+}
+
+/******************************BODY & FOOTER ******************************/
+
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+    z-index: 10; /*Z-Index par défaut de tout membres*/
+}
+
+
+nav{ /* HEADER */
+    width: 100%;
+    background-image: linear-gradient(to right, #192A3D, #364f6c);
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 12px;
+}
+
+nav{ /* LISTES A PUCES */
+    margin: 0;
+    padding: 0;
+}
+
+nav::after{ /* ????? */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > a{ /* HEADER HORIZONTALE*/
+    float: left;
+    position: relative;
+}
+
+nav a{ /* PUCES INDIVIDUELLES*/
+    list-style-type: none;
+}
+
+nav a{ /* LIENS DU HEADER */
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > a{ /* TOUT LE HEADER */
+    padding: 20px 30px;
+    color: white;
+    margin-right: 4px;
+}
+
+nav > a:hover{ /*Règle problème de text position*/
+    margin-top: 5px;
+}
+
+nav > a:hover{ /* Couleur du survol d'une puce*/
+    color: #95e3e5;
+    padding: 15px 30px 20px 30px;
+}
+
+.topnav{
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+/***********************/
+
+
+.PageActuelle{ /* PAGE ACTUELLE DANS LE HEADER*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #95e3e5;
+}
+
+.Accueil { /* BOUTON ACCUEIL*/
+    height:6px;
+    width: 50px;
+    background-size: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 6px;
+    transition: 0.6s;
+    bottom: 15px;
+}
+
+.Accueil:hover {
+    margin-top: 11px;
+}
+
+.Accueil:hover img{
+    transform: scaleX(-1);
+    transition: 0.6s;
+}
+
+.logo {
+    width:60px;
+    transition: 0.6s;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #0c151e, #192A3D);
+    color: white;
+    font-family: "Quicksand";
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer div section{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div section ul{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div section ul li{
+    list-style-type: circle;
+}
+
+footer > p{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer .indentation{
+    text-indent: 3em;
+}
+
+footer .bouton{
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right, #0c151e, #192A3D);
+}
+
+footer .bouton:hover{
+    background-image: linear-gradient(to right, #0f1924, #2f3f50,#2f3f50, #2f3f50, #0f1924);
+    text-decoration: none;
+    color: white;
+}
+
+footer .contact{
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 20%;
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+/***************************************************************************/
+
+
+/******************************TEXTES******************************/
+
+
+.texte h1{ /*Titre métier*/
+	font-family: 'Quicksand', sans-serif;
+	color: #607cdf;
+}
+
+.texte h3{ /* Sous-Titres*/
+	color: #192A3D;
+	text-decoration: underline;
+	font-family: monospace;
+}
+
+
+.texte p{ /*blablabla*/
+	
+	margin-right: 15%;
+	margin-left: 15%; 
+	color: black;
+}
+
+/******************************************************************/
+
+
+/******************************INDEX*************************************/
+
+
+/*DIAPORAMA*/
+
+/*Animation type keyframes pour les versions anciennes des naviguateur chrome et safari*/
+@-webkit-keyframes slider
+{
+    0% {transform: translate3d(0% , 0% , 0);}
+    11.1% {transform: translate3d(-10% , 0% , 0);}
+    22.2% {transform: translate3d(-20% , 0% , 0);}
+    33.3% {transform: translate3d(-30% , 0% , 0);}
+    44.4% {transform: translate3d(-40% , 0% , 0);}
+    55.5% {transform: translate3d(-50% , 0% , 0);}
+    66.6% {transform: translate3d(-60% , 0% , 0);}
+    77.7% {transform: translate3d(-70% , 0% , 0);}
+    88.8% {transform: translate3d(-80% , 0% , 0);}
+    100% {transform: translate3d(-90% , 0% , 0);}
+}
+
+/*Animation type keyframes pour les versions anciennes du naviguateur mozilla*/
+@-moz-keyframes slider
+{
+    0% {transform: translate3d(0% , 0% , 0);}
+    11.1% {transform: translate3d(-10% , 0% , 0);}
+    22.2% {transform: translate3d(-20% , 0% , 0);}
+    33.3% {transform: translate3d(-30% , 0% , 0);}
+    44.4% {transform: translate3d(-40% , 0% , 0);}
+    55.5% {transform: translate3d(-50% , 0% , 0);}
+    66.6% {transform: translate3d(-60% , 0% , 0);}
+    77.7% {transform: translate3d(-70% , 0% , 0);}
+    88.8% {transform: translate3d(-80% , 0% , 0);}
+    100% {transform: translate3d(-90% , 0% , 0);}
+}
+
+/*Animation type keyframes pour les versions anciennes du naviguateur opéra*/
+@-o-keyframes slider
+{
+    0% {transform: translate3d(0% , 0% , 0);}
+    11.1% {transform: translate3d(-10% , 0% , 0);}
+    22.2% {transform: translate3d(-20% , 0% , 0);}
+    33.3% {transform: translate3d(-30% , 0% , 0);}
+    44.4% {transform: translate3d(-40% , 0% , 0);}
+    55.5% {transform: translate3d(-50% , 0% , 0);}
+    66.6% {transform: translate3d(-60% , 0% , 0);}
+    77.7% {transform: translate3d(-70% , 0% , 0);}
+    88.8% {transform: translate3d(-80% , 0% , 0);}
+    100% {transform: translate3d(-90% , 0% , 0);}
+}
+
+/*Animation type keyframes pour tous les naviguateurs*/
+
+@keyframes slider
+{
+    0% {transform: translate3d(0% , 0% , 0);}
+    11.1% {transform: translate3d(-10% , 0% , 0);}
+    22.2% {transform: translate3d(-20% , 0% , 0);}
+    33.3% {transform: translate3d(-30% , 0% , 0);}
+    44.4% {transform: translate3d(-40% , 0% , 0);}
+    55.5% {transform: translate3d(-50% , 0% , 0);}
+    66.6% {transform: translate3d(-60% , 0% , 0);}
+    77.7% {transform: translate3d(-70% , 0% , 0);}
+    88.8% {transform: translate3d(-80% , 0% , 0);}
+    100% {transform: translate3d(-90% , 0% , 0);} /*90% pour ne pas couper la dernière image car à 100% on est logiquement à droite de la dernière image*/
+}
+
+#diapo /*div contenant le diaporama*/
+{
+    width : 100%; /*la diapo prend toute la largeur de l'écran*/
+    height: 50%; /*hauteur du diapo fixe*/
+    overflow: hidden; /*afin d'éviter d'avoir une scroll bar, car on va tout simplement avoir un conteneur plus grand que la div parente*/
+}
+
+#diapo-container /*conteneur de la div parente qui prend toute la largeur de l'écran*/
+{
+    position: relative;
+    width: 1000%; /*100% <=> 1 image, donc pour 10 image on aura besoin d'un conteneur 10 fois plus longs*/
+    -webkit-animation: 80s slider infinite alternate; /*anciennes verisons de chrome et safari*/
+    -moz-animation: 80s slider infinite alternate; /*anciennes verisons de mozila*/
+    -o-animation: 80s slider infinite alternate; /*anciennes verisons de opera*/
+    animation: 80s slider infinite alternate; /*naviguateurs à jours/récents*/
+    /*animation-timing-function: ease; /*type de transition ease != ease-in-out*/
+}
+
+#diapo-container img /*images contenues dans le diapo*/
+{
+    width: 10%; /*Ici on précise à chaque image qu'elle ne prendra que 10% de sa div parente (le conteneur). Donc 10% des 100% de l'écran*/
+    float: left; /*alignement à gauche*/
+}
+
+/*FIN DIAPORAMA*/
+
+
+.index{
+   margin: 5.3%;
+    bottom: 4vw;
+    position: relative;
+}
+
+.titre_index{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.p_index{
+	font-family: 'Quicksand', sans-serif;
+    margin-left: 25%;
+}
+
+.lien_index{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.lien_index:hover{
+    color: #00AEA6;
+    transition: 0.3s;
+}
+
+.logo_index{
+    
+    background-image: url(images/illustrations/logo_index.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 10vw;
+    width: 10vw;
+    transition: 0.3s;
+}
+
+.logo_index:hover{
+    background-image: url(images/illustrations/logo_index2.png);
+    transition: 0.3s;
+}
+
+
+/****************************************************************************/
+
+
+/******************************PRESENTATION TYPE*************************************/
+
+.presentation {
+	font-family: 'Quicksand', sans-serif;
+	margin-right: 15%;
+	margin-left: 15%;
+	text-align: left;
+    font-size: 1.3vw;
+}
+
+.bloc1_pres{
+    display:flex;
+}
+
+
+
+.P1_pres {
+    position: relative;
+    bottom: 2vw;
+	padding : 16px;
+	width: 45%;
+}
+
+.bloc2_pres{
+    display: flex;
+}
+
+.pres_icon{
+    float: right;
+    height: 15%;
+	width: 15%;
+}
+
+.P2_pres{
+    margin-right: 30px;
+	padding : 16px;
+	width: 80%;
+}
+
+.bloc3_pres{
+    display: flex;
+}
+
+.P3_pres{
+    margin-right: 30px;
+	padding : 16px;
+	width: 80%;
+}
+
+.anecdote{
+    border: 3px dashed #0284c0;
+    height: 15vw;
+    width: 17vw;
+    
+}
+
+.anecdote_titre{
+    height: 15%;
+    color: white;
+    padding: 5px 0px 0px 0px;
+    margin: -3px;
+    background-color: #0284c0;
+    font-size: 1em;
+}
+
+.anecdote_p{
+    font-size: 0.7em;
+    padding: 5px
+}
+
+
+/****************************************************************************/
+
+/************************* BD PRESENTATION *********************************/
+
+.imageBD{
+    display : flex;
+	height : 300px;
+    background-image: url("images/banniere/bdBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #3b5e84;
+	background-position: center;
+	background-size: 550px;  
+}
+
+.presentation .image_presBD1{
+	height: 45%;
+	width: 45%;
+}
+
+.database_icon{
+    position: relative;
+    top: 3vw;
+    height: 15%;
+	width: 15%;
+}
+
+
+.pres_ficheBD{
+    width: 30vw;
+    height: 30vw;
+    transition: 0.4s;
+    background-image: url(images/fiche/fiche_administrateur.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.pres_ficheBD:hover{
+	transition: 0.4s;
+    background-image: url(images/fiche/fiche_administrateur2.png);
+}
+/***************************************************************************/
+
+/*************************PROG PRESENTATION*********************************/
+.imageProg{
+    display : flex;
+	height : 300px;
+    background-image: url("images/banniere/programmationBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #5785b9;
+	background-position: center;
+    background-size: 500px;
+}
+
+.presentation .imagePROG1{
+	height: 30%;
+	width: 30%;
+}
+
+
+.pres_fichePROG{
+    width: 30vw;
+    height: 30vw;
+    transition: 0.4s;
+    background-image: url(images/fiche/fiche_prog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.pres_fichePROG:hover{
+    background-image: url(images/fiche/fiche_prog2.png);
+}
+/****************************************************************************/
+
+/******************************WEB PRESENTATION*******************************/
+.imageWeb{
+    display : flex;
+    height : 300px;
+    background-image: url("images/banniere/webBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: #015778;
+    background-position: center;
+    background-size: 540px;
+}
+
+.presentation .imageWeb1{
+    height: 45%;
+    width: 45%;
+}
+
+.pres_ficheWeb{
+    width: 30vw;
+    height: 30vw;
+    transition: 0.4s;
+    background-image: url(images/fiche/fiche_web.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.pres_ficheWeb:hover{
+    transition: 0.4s;
+    background-image: url(images/fiche/fiche_web2.jpg);
+}
+
+/****************************************************************************/
+
+
+/*****************************FICHES METIERS******************/
+
+.conteneurPrincipaleFicheMetier{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteneurPrincipaleFicheMetier h1{
+    font-size: 200%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.conteneurCategoriesFichesMetiers{
+    margin-top: 3%;
+}
+
+.uneCategorieInformationMetier{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.uneCategorieInformationMetier p{
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 2%;
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.listeFiche{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    text-indent: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.uneCategorieInformationMetier li{
+    list-style: circle;
+}
+
+.titresFichesMetiersConteneurs{
+    flex: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #0174DF;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;}
+
+.titresFichesMetiersConteneurs h2{
+    font-size: 2.5em;
+}
+
+.sousListeFiche{
+    border-color: white;
+    margin-top: 1%;
+}
+
+.conteneurInfoFiche{
+    border-color: #0174DF;
+    border-width: 3px 0px 0px 0px;
+    padding-left: 2%;
+    border-style: solid;
+    flex: 5;
+}
+
+.conteneurInfoFiche img{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.resumeFiche{
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    display: block;
+    text-align: center;
+    font-size: 140%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.retour_sommet a{
+    position: relative;
+    float: right;
+    right: 20px;
+    height : 25px;
+    width : 200px;
+    text-decoration: none;
+    text-indent: 1.5em;
+    color: white;
+    margin : 0px 0px 10px 20px;
+    background-color: #0174DF;
+    border-color: #0174DF;
+    border-width: 5px;
+    border-style: solid;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 120%;
+    background-image: url(images/illustrations/retour.png);
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+}
+
+.retour_sommet a:hover{
+    text-decoration: underline;
+}
+
+	/******************************BD FICHE METIER**********************/
+
+	#grostitreBD{
+	    font-family: 'Bandes', sans-serif;
+	    font-size: 200%;
+		color: #263A52;
+	}
+
+	#imgFicheBD1{
+		bottom: 0.5vw;
+	    width: 30%;
+	    height: 30%;
+	    flex-basis: 100%;
+	    margin-right: 30%;
+	}
+
+	/*****************************DATE_SCIENTIST FICHE METIER******************/
+	
+	#imgBanniereFiche{
+	    width: 100%;
+	}
+
+	#grostitreFicheDS{
+	    /*Mettre style/police*/
+	}
+
+
+	/***************************** GROWTH_HACKER FICHE METIER*******************/
+
+	.image_growth {
+	    display: flex;
+		height: 300px;
+	    background-image: url("images/banniere/growthBanniere.jpg");
+		background-repeat: no-repeat;
+		background-color: #1f6c9a;
+		background-position: center;
+	    background-size: 620px;
+	}
+
+	#grostitreGH{
+	    font-family: "Glitch", sans-serif;
+	}
+
+
+	/******************************WEB FICHE METIER*************************************/
+
+	.parties_ficheDW{ /* COULEUR ET LIGNE DE TRANSITION*/
+	    font-family: 'Quicksand', sans-serif;
+	    width : 50%;
+	    border-color: #0174DF
+	    border-width: 3px 0px 0px 0px;
+	    border-style: solid;
+	    text-align: justify;
+	    padding-top: 20px;
+	}
+
+    #grostitreDW{
+        font-family: "Bellerose", 'Quicksand', sans-serif;
+        color: #0174DF;
+    }
+
+
+	/**************************PROG FICHE METIER*********************************/
+
+	#grostitrePA{
+	    /*Mettre style*/
+	}
+
+	#imgFicheProg1{
+	    width: 100%;
+        height: 60%;
+        border: 0;
+	}
+
+
+	.titreFormationPROG{
+	    float: left;
+	    color: #0174DF; 
+	    font-family: 'Quicksand', sans-serif;
+	    font-size: 50px;
+	    left: 2%;
+	    top: 150px;
+	    
+	}
+
+
+
+/**************************************************************************/
+
+
+
+/*****************************LISTE METIERS*********************************/
+
+.image_liste {
+    display : flex;
+	height : 300px;
+    background-image: url("images/banniere/listeBanniere.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 930px;
+    background-color: #009ea9;
+}
+
+.img_metier{
+    display: flex;
+    height: 20vw;
+    width: 568px;
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 110%;
+    transition: 0.4s;
+}
+
+.img_presentation .img_metier { /*petites images de l'index*/
+    display: inline-flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.ligne1{
+    margin-top: 8px;
+}
+
+/*------------------------*/
+.metier1{
+    background-image:url(images/fiche/fiche_administrateur.jpg);
+}
+
+.metier1:hover{
+    background-image:url(images/fiche/fiche_administrateur2.png);
+    transition: 0.4s;
+}
+/*------------------------*/
+
+.metier2{
+    background-image:url(images/fiche/fiche_web.jpg);
+}
+
+.metier2:hover{
+    background-image:url(images/fiche/fiche_web2.jpg);
+    transition: 0.4s;
+}
+
+/*------------------------*/
+.metier3{
+    background-image:url(images/fiche/fiche_growth.jpg);
+}
+
+.metier3:hover{
+    background-image:url(images/fiche/fiche_growth2.png);
+    transition: 0.4s;
+}
+/*------------------------*/
+.metier4{
+    background-image:url(images/fiche/fiche_data.jpg);
+}
+
+.metier4:hover{
+    background-image:url(images/fiche/fiche_data2.png);
+    transition: 0.4s;
+}
+/*------------------------*/
+.metier5{
+    background-image:url(images/fiche/fiche_prog.jpg);
+}
+
+.metier5:hover{
+    background-image:url(images/fiche/fiche_prog2.png);
+    transition: 0.4s;
+}
+/*------------------------*/
+.metier_alea{
+    background-image:url(images/fiche/fiche_aleatoire.jpg);
+}
+
+.metier_alea:hover{
+    background-image:url(images/fiche/fiche_aleatoire2.png);
+    transition: 0.4s;
+}
+
+/******************************************************************************/
+
+
+
+/*****************************ACTUALITES****************************************/
+.image_actu1{
+     display : flex;
+	height : 14vw;
+    background-image: url("images/banniere/entreprise2Banniere.jpg");
+	background-repeat: no-repeat;
+	background-color: white;
+	background-position: right;
+    background-size: 70%;
+    transition: 0.4s;
+}
+
+.image_actu1:hover{
+    background-size: 80%;
+	transition: 0.4s;
+}
+
+.image_actu2{
+     display : flex;
+	height : 14vw;
+    background-image: url("images/banniere/formationBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #42546F;
+	background-position: left;
+    background-size: 47%;
+    transition: 0.4s;
+}
+
+.image_actu2:hover{
+	background-size: 57%;
+	transition: 0.4s;
+}
+
+.image_actu3{
+     display : flex;
+	height : 14vw;
+    background-image: url("images/banniere/marcheBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #AFEBEB;
+	background-position: right;
+    background-size: 70%;
+    transition: 0.4s;
+}
+
+.image_actu3:hover{
+	background-size: 80%;
+	transition: 0.4s;
+}
+
+.image_actu4{
+     display : flex;
+	height : 14vw;
+    background-image: url("images/banniere/technologiesBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #4A585E;
+	background-position: left;
+    background-size: 70%;
+    transition: 0.4s;
+}
+
+.image_actu4:hover{
+	background-size: 80%;
+	transition: 0.4s;
+}
+
+/*****************************************************************************/
+
+
+/***************************ENTREPRISES*****************************************/
+
+
+.imageEntreprise{
+    display : flex;
+    height : 350px;
+    background-image: url("images/banniere/entreprisesBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: #b33053;
+    background-position: center;
+    background-size: 500px;
+}
+
+
+.entrepriseTitre{
+    text-align: center;
+    color:#b33053;
+    font-size:3vw;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.partiesEntreprise{
+    border-color: #4a585e;
+    border-width: 3px 0px 3px 0px;
+    border-style: solid;
+    font-family: 'Quicksand', sans-serif;
+    margin-left:15%;
+    margin-right: 15%;
+}
+
+.tableauNA {
+    align-items: right;
+    display : flex;
+    height : 33vw;
+    background-image: url("images/illustrations/tableauNA.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30vw;
+}
+
+.tableauNA1 {
+    height : 22vw;
+    background-image: url("images/illustrations/image_entr1.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55vw;
+}
+
+
+/*******************************************************************************/
+
+
+
+/************************************ FORMATIONS*******************************/
+.imageFormation{ /*baniere de la page*/
+    display : flex;
+    height : 350px;
+    background-image: url("images/banniere/formationBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: #435470;
+    background-position: center;
+    background-size: 700px;
+}
+
+.formations {
+    display: flex;
+    margin:4% 15% 5% 15%;
+}
+
+.formations ul{
+    font-family: 'Text One Me',sans-serif;
+    font-size: 1.5vw;
+}
+
+.formations img{
+    height:30%;
+    width:30%;
+    padding-top: 4vw;
+    transition: 1s
+}
+
+.formations img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.titreLi {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.formations h2{ /*police et taille ds titres*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4vw;
+}
+
+.lycee h2 { /*couleur de chaque titre*/
+    color:#5FB404;
+}
+
+.lycee div{ /*position des blocs*/
+    margin-left: 5vw;
+}
+
+.bac2 h2 {
+    color:#2ABAAD;
+}
+
+.bac2 div{
+    margin-right: 3vw;
+}
+
+.bac3 h2 {
+    color:#4053FF;
+}
+
+.bac3 div{
+    margin-left: 5vw;
+}
+
+.bac5 h2 {
+    color:#982AFF;
+}
+
+.bac5 div{
+    margin-right: 22vw;
+}
+
+.bac8 h2 {
+    color:#9D0EAC;
+}
+
+.bac8 div{
+    margin-left: 5vw;
+}
+/*****************************************************************************/
+
+
+
+/*********************************MARCHE***************************************/
+.imageMarche{
+    display : flex;
+	height : 350px;
+    background-image: url("images/banniere/marcheBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #afebeb;
+	background-position: center;
+    background-size: 900px;
+}
+
+.texte_marche{
+    margin: 5vw 5vw 5vw 5vw;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.texte_marche p{
+    margin-right: 5vw;
+    font-size: 120%;
+}
+
+.titre_marche{
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    color: #01A9DB;
+}
+
+.bloc_marche{
+    width: 50vw;
+}
+
+.partie_marche{
+    display: flex;
+}
+
+.logo_marche{
+    height: 8%;
+    width: 8%;
+}
+
+.retour_sommet_marche a{
+    background-color: #01A9DB;
+    border-color: #01A9DB;
+}
+
+.feuillePrincipaleMarche{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.feuillePrincipaleMarche h3{
+    margin-top: 5%;
+}
+
+.feuillePrincipaleMarche li{
+    font-size: 100%;
+}
+
+/*****************************************************************************/
+
+
+/************************************TECHNOLOGIES*******************************/
+
+.page_technologies{ /* Couleur de fond de la page*/
+    background-image: linear-gradient(to right, #192A3D, #364f6c);
+}
+
+.les_techno{ /* Flex sur les 8 technologies*/
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-top: 3px solid white;
+}
+
+.tech_div{ /* div contenant chaque technologies (8) */
+    width: 21vw;
+    height: 19.3vw;
+    margin: 0vw 1.85vw 1vw 1.85vw;
+    opacity: 1;
+}
+
+.les_techno img{ /* Image contenue dans les div (VISIBLE)*/
+    width: 19vw;
+    height: 18.5vw;
+    margin-top: 2vw;
+    opacity: 1;
+    transition: 0.6s;
+    z-index: 20;
+}
+.tech_div:hover img{ /* Disparition de l'image en :hover*/
+    opacity:0;
+    transition: 0.6s; 
+}
+
+.tech_texte{ /* Texte contenu dans les div (CACHE)*/
+    position: relative;
+    color: white;
+    bottom: 20vw;
+    width: 21vw;
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 1; 
+}
+
+.tech_div:hover .tech_texte{ /* Apparition du texte en :hover*/
+    opacity: 1;
+    transition: 0.6s;
+}
+
+
+.les_techno h1{ /* Police & taille des titres */
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5vw;
+}
+
+.les_techno p{ /* Police & taille du texte*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vw;
+    text-align: left;
+}
+
+
+/*****************************************************************************/
+
+
+
+/******************************INTERVIEWS*************************************/
+
+.image_interview1{
+    display : flex;
+	height: 21.8vw;
+    background-image: url("images/banniere/interview1Banniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #0c1325;
+	background-position: right;
+    background-size: 38%;
+    filter: grayscale(100%);
+    transition: 0.7s;
+    overflow: visible;
+}
+
+.image_interview2{
+    display : flex;
+	height : 21.8vw;
+    background-image: url("images/banniere/interview2Banniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #efefef;
+	background-position: right;
+    background-size: 105%;
+    filter: grayscale(100%);
+    transition: 0.7s;
+    overflow: visible;
+}
+
+.image_interview1:hover{
+	filter: grayscale(0);
+	transition: 0.7s;
+}
+
+.image_interview2:hover{
+	filter: grayscale(0);
+	transition: 0.7s;
+}
+
+.corps_interviews{
+    background-image: linear-gradient(to right, #192A3D, #364f6c);
+}
+/****************************************************************************/
+
+/******************************PAGES INTERVIEWS*************************************/
+.interview1_banniere{
+     display : flex;
+	height : 350px;
+    background-image: url("images/banniere/interview1Banniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #0c1325;
+	background-position: right;
+    background-size: 530px;
+}
+
+.interview2_banniere{
+     display : flex;
+	height : 350px;
+    background-image: url("images/banniere/interview2Banniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #efefef;
+	background-position: right;
+    background-size: 1500px;
+}
+.interview article {
+	margin-right:20%;
+	margin-left: 20%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.interview article p{
+	color: black;
+	text-align: justify;
+}
+
+.interview article h1{
+	color: black;
+}
+
+.interview article h4{
+	color: black;
+	color: #607cdf;
+	font-size: 18px;
+}
+
+.interview article h1{
+	color: black;
+	color: #FF0000;
+}
+
+.interview .introduction {
+	text-align: justify;
+	font-size: 20px;
+	color:black;
+}
+
+.interview .youtube{
+    position: relative;
+    left: 13vw;
+    bottom: 6vw;
+}
+
+.interview .logo_youtube{
+    position: relative;
+    width: 10%;
+    opacity: 1;
+    bottom: 2vw;
+    transition: 1s;
+}
+
+.interview .video_youtube{
+    height: 0px;
+    transition: 1s;
+}
+
+.interview .youtube:hover .video_youtube{
+    width: 560px;
+    height: 315px;
+    transition: 1s;
+}
+
+.interview .youtube:hover .logo_youtube{
+    opacity: 0;
+    transition: 1s;
+}
+
+.interview .logo_reseaux{
+     position: relative;
+    width: 10%;
+    opacity: 1;
+    bottom: 2vw;
+    transition: 1s;
+}
+
+.interview .reseaux{
+    margin-bottom: -7vw;
+}
+
+.interview ul li{
+    list-style-type: none;
+}
+/****************************************************************************/
+
+
+
+
+/******************************QUI SOMMES NOUS ?******************************/
+
+
+.texteQSN{ /*Paragraphes de la page*/
+	margin-right: 15%;
+	margin-left: 15%;
+	font-size:1.5vw;
+	color: black;
+	text-align: justify;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.imageQSN{ /*Bannière de la page*/
+    display : flex;
+	height : 300px;
+    background-image: url("images/banniere/qsnBanniere.jpg");
+	background-repeat: no-repeat;
+	background-color: #003366;
+	background-position: center;
+	background-size: 550px;
+    
+}
+
+.membres img{
+	width:10vw;
+	height: 10vw;
+	display: flex;
+	flex-direction:column;
+}
+
+.noms { /*police, taille et couleur des prénoms et noms des membres à droite*/
+	font-family: 'Bangers', cursive;
+	display : column;
+	font-weight:bold;
+	text-align: right;
+	font-size:3vw;
+	width:20vw;
+    position:relative;
+    top:-3vw;
+    left:30vw;
+}
+
+.sous_noms { /*police, taille et couleur des descriptions des membres à droite*/
+	color: black;
+	font-size:1.5vw;
+	text-align: right;
+    position: relative;
+    left: 15.3vw;
+    top:-7vw;
+    width:35vw;
+}
+
+.nomsg { /*police, taille et couleur des prénoms et noms des membres à gauche*/
+	font-family: 'Bangers', cursive;
+    display: column;
+	font-weight:bold;
+	text-align: left;
+    position: relative;
+    top:-3vw;
+	font-size:3vw;
+	width:20vw;
+}
+
+.sous_nomsg { /*police, taille et couleur des descriptions des membres à gauche*/
+	color: black;
+	font-size:1.5vw;
+    position: relative;
+    top:-7vw;
+	text-align: left;
+    width:35vw;    
+}
+
+.inline {
+	width:50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 9px;
+    margin-right: 1%;
+	color: #607cdf;
+}
+
+.mgauche {
+	display: flex;
+	justify-content : flex-start;
+}
+
+.mgauche p{
+    margin-left: 1%;
+}
+
+.mdroite {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.visage { /*taille, position des visages*/
+   display: flex;
+    height: 10vw;
+    width: 10vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 1s; 
+}
+
+.visage:hover{ /*rotation au survol des visages*/
+    transform: scaleX(-1);
+    transform: rotate(1800deg);
+    transition: 1.5s;
+}
+
+
+.clement{ /* visage sans costumes*/
+    background-image: url(images/qsn/clem.png);
+}
+
+.clement:hover{ /*version super-héros*/
+    background-image: url(images/qsn/batclem.png);
+}
+
+.samuel{
+    background-image: url(images/qsn/sam.png);
+}
+
+.samuel:hover{
+    background-image: url(images/qsn/superman.png);
+}
+
+.bixente{
+    background-image: url(images/qsn/bix.png);
+}
+
+.bixente:hover{
+    background-image: url(images/qsn/spiderbix.png);
+}
+
+.tom{
+    background-image: url(images/qsn/tom.png);
+}
+
+.tom:hover{
+    background-image: url(images/qsn/irontom.png);
+}
+
+.alfred{
+    background-image: url(images/qsn/alfred.png);
+}
+
+.alfred:hover{
+    background-image: url(images/qsn/wonderalfred.png);
+}
+
+.lien_contact{ /*lien vers la page contact*/
+    text-decoration: none;
+    color: #00AEA6;
+}
+
+.lien_contact:hover{
+    text-decoration: underline;
+}
+
+
+/******************************************************************************/
+
+
+
+/******************************COOKIES*************************************/
+.imageCookies{
+	display : flex;
+    height : 300px;
+	background-image: url("images/banniere/cookiesBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: #5785b9;
+    background-position: center;
+	background-size: 6000px;
+}
+    
+.quoi_cookies {    
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+
+.titre_Cookies{
+	font-family: 'Text Me One', sans-serif;
+    text-align: center;
+}
+
+.paragraphe_Cookies{
+	font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+
+.boite_cookies1{
+	display: flex;
+	flex-direction: row;
+}
+
+.boite_cookies2{
+	display: flex;
+	flex-direction: row;
+}
+
+.logo_cookies1{
+	padding-top: 2%;
+	margin-right: 5%;
+    
+}
+
+.premier_cookies{
+	font-family: 'Text Me One', sans-serif;
+	width: 80%;
+}
+
+
+.logo_cookies2{
+	padding-top: 2%;
+	margin-right: 5%;
+}
+
+
+.deuxiemes_Cookies{
+	font-family: 'Text Me One', sans-serif;
+	width: 80%;
+}
+
+.lien_cookies{
+	text-decoration: none;
+	color: saddlebrown;
+}
+
+.lien_cookies:hover{
+	text-decoration: underline;
+}
+
+.info_cookies{
+	list-style-position: inside;
+	font-family: 'Text Me One', sans-serif;
+    width:100%;
+   
+}
+
+.info_cookies ul{
+	list-style:none;
+    width: 12vw;
+    margin-left: 43%;
+}
+
+.puce_cookies{
+	color: saddlebrown;
+	text-decoration: none;
+    text-align: left;
+}
+
+
+.puce_cookies:hover{
+	text-decoration: underline;
+}
+
+.logo_cookie{
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1vw;
+    background-image: url(images/illustrations/cookie.png);
+    background-repeat: no-repeat;
+    background-size: 5vw;
+}
+
+.logo_cookie:hover{
+    background-image: url(images/illustrations/cookiecroque.png);
+}
+/****************************************************************************/
+
+
+
+/******************************MENTIONS LEGALES*************************************/
+
+.image_mentions_legale{
+	display : flex;
+    height : 300px;
+	background-image: url("images/banniere/mentionslegalesBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: #85ccc6;
+    background-position: center;
+	background-size: 400px;
+}
+
+.quoi_mention_legale {    
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Text Me One', sans-serif;
+	}
+
+.mention_legale_titre{
+	font-family: 'Text Me One', sans-serif;
+}
+
+
+.mention_legale_puce1{
+	list-style: circle;   
+}
+
+.mention_legale_puce1:hover{
+	list-style: disc;
+}
+
+.mention_legale_puce2{
+	list-style:none;
+}
+
+
+.mention_legale_lien{
+   	color: #85ccc6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.mention_legale_lien:hover{
+    text-decoration: underline;
+
+}
+
+/****************************************************************************/
+
+
+
+/******************************POLITIQUE CONFIDENTIALITE************************/
+
+.imageConfidentialite{
+	display : flex;
+    height : 300px;
+	background-image: url("images/banniere/confidentialiteBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+	background-size: 300px;
+}
+
+.quoi_politique_conf {    
+	margin-left: 10%;
+	margin-right: 10%;
+    
+}
+
+.titre_conf{
+	font-family: 'Text Me One', sans-serif;
+}
+
+.para_confidencialite{
+	font-family: 'Text Me One', sans-serif;
+	width: 80%
+   	 
+}
+
+
+
+.liste_confidencialite{
+	list-style:none;
+}
+
+.lien_confidencialite{
+	font-family: 'Text Me One', sans-serif;
+    color: black;
+	text-decoration: none;
+}
+
+.lien_confidencialite:hover{
+	text-decoration: underline;
+}
+
+/****************************************************************************/
+
+
+/******************************NOUS CONTACTER************************/
+
+.contactContainer{
+    background-image: url("images/iut-la-rochelle.JPG");
+    background-size: 100%;
+    padding: 20px;
+
+}
+
+.contact{
+    width: 70%;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 2px 13px #555;
+    background-color: white;
+}
+
+.contact section{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+.contact section form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact section form input{
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.contact section form textarea{
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.contact section form input:hover{
+    background-color: rgba(149, 227, 229, 0.3);
+}
+
+.contact section form textarea:hover{
+    background-color: rgba(149, 227, 229, 0.3);
+}
+
+.contact section form button{
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+    width: 40%;
+}
+
+.contact section form button:hover{
+    background-color: rgba(149, 227, 229, 0.3);
+}
+
+.contact section form button:active{
+    background-color: #192A3D;
+    color: white;
+}
+
+.contact aside{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact aside .reseauSociaux{
+    padding: 40px;
+}
+
+.contact aside .reseauSociaux img{
+    margin: 10px;
+    width: 40px;
+}
+
+.contact aside .reseauSociaux img:hover{
+    opacity: 0.7;
+}
+
+
+
+/****************************************************************************/
+
+
+/**********************************ERREUR 404 ***************************************/
+
+.erreur_404img{
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+}
+
+.erreur_retour{
+    text-decoration: none;
+    float: right;
+    margin-right: 3%;
+    color: #017388;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.erreur_retour:hover{
+    text-decoration: underline;
+}
+
+/********************************************************************************************/
+
+/************************************** SOURCES ***********************************/
+
+.imageSource{
+    display : flex;
+    height : 350px;
+    background-image: url("images/banniere/sourcesBanniere.jpg");
+    background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-position: center;
+    background-size: 500px;
+}
+
+.liste_sources li{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: left;
+    font-size: 1.5vw;
+    width: 25%;
+    list-style-position: inside;
+    list-style-type: circle;
+    margin: 1vw;
+}
+
+.liste_sources li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+    
+}
+
+.liste_sources li a:hover{
+    text-decoration: underline;
+    color: #95e3e5;
+    font-size: 1.8vw;
+    transition: 0.4s;
+}
+
+.lien_sources{ /*lien vers la page sources*/
+    text-decoration: none;
+    color: #00AEA6;
+}
+
+.lien_sources:hover{
+    text-decoration: underline;
+}
+
+/**********************************************************************************/
+/****************************** SECTION RESPONSIVE**************************/
+
+/************** HEADER ********************/
+
+@media screen and (max-width: 1180px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 1180px) {
+  .topnav.responsive {position: relative;transition: 1s;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    transition: 1s;
+  }
+
+  body{
+    margin-top: -6px;
+  } 
+    
+}
+/********************************************/
+
+
+/*********** INDEX ***************************/
+@media screen and (max-width: 1180px) {
+    footer{
+        display: none;
+    }
+}
+
+/********************************************/
+
+
+/************** LE MARCHE *******************/
+@media screen and (max-width: 1400px) {
+    .logo_marche{
+        display:none;
+    }
+}
+/********************************************/
+
+
+
+/*************TECHNOLOGIES*******************/
+@media screen and (max-width: 1400px) {
+    .les_techno{
+    width: 100%;
+    flex-direction:row;
+    justify-content: center;
+    border-top: 8px solid white;
+  }
+    
+    .tech_div{
+    position: relative;
+    margin: 0vw 6vw 1vw 6vw;
+    opacity: 1;
+  }
+    
+}
+
+/*** MOBILE***/
+
+@media screen and (max-width: 1180px) {
+    
+  .les_techno{ /* Mets les icones en colonnes et au centre*/
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Enlève les p cachés qui sont hors écran*/
+
+  }
+    .tech_div{/* Mets un écart entre les images*/
+    margin: 0vw 1.85vw 1vw 1.85vw;
+    transition: 1s;
+  }
+    
+   .tech_div:hover{/* Permets aux p d'être centrés à l'apparition*/
+        margin-bottom: 20%;
+        width: 80%;
+        transition: 1s;
+    }
+    
+   .les_techno:hover p{ /*Change la taille des p et leur largeur*/ 
+        width: 400%;
+        font-size: 2.5vw;
+        
+    }
+    .les_techno:hover h1{ /* Change la taille des h1*/
+        font-size: 3.5vw;
+        width: 400%;
+    }
+}
+/*************/
+
+/********************************************/
+
+/****************** BANNIERES ***********/
+
+@media screen and (max-width: 1180px) {
+    
+    .imageBD {
+        display: none;
+    }
+    
+    .imageProg {
+        display: none;
+    }
+    
+    .imageWeb {
+        display: none;
+    }
+    
+    .imageMarche{
+        display: none;
+    }
+    
+    .image_liste{
+        display: none;
+    }
+    
+    .imageQSN{
+        display: none;
+    }
+    
+    .interview2_banniere{
+        display: none;
+    }
+}
+
+/**********************************************/
+
+/******************************NOUS CONTACTER************************/
+
+@media screen and (max-width: 1420px){
+
+    .contact{
+        width: 70%;
+        margin: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 870px){
+
+    .maps iframe{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+
+    .maps iframe{
+        display: none;
+    }
+
+}
+
+
+/****************************************************************************/
+
+/******************************FICHES METIERS******************************/
+
+@media screen and (max-width: 1180px){
+
+    .uneCategorieInformationMetier{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/***************************************************************************/
+
+/***************************************************************************/

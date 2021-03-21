@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>InFolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Roboto|Text+Me+One" rel="stylesheet">
+      <link rel="shortcut icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="body">
+      <div class="topnav" id="myTopnav">
+         <nav>
+            <a href="index.html" class="Accueil active"><img class="logo" src="images/logo.png"></a>		
+            <a href="presentation_prog.html" class="PageActuelle">Programmation</a>	
+            <a href="presentation_bd.html">Base de données</a>		
+            <a href="presentation_web.html">Web</a>
+            <a href="liste_metiers.html">Métiers</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>	
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>		
+         </nav>
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+      <div class="imageProg">
+         <!-- IMAGE DE FOND --> 
+      </div>
+      <div class="presentation">
+         <br><br>
+         <div class="bloc1_pres">
+            <img class="imagePROG1" src="images/illustrations/programmer_presentation.png" alt="programmeur">
+            <p class="P1_pres"> <br> <br> Un <b>programme</b> est une liste d’instructions écrites pour résoudre un problème, ou pour effectuer une action. Programmer, c'est le fait de créer ces instructions notamment grâce à des <b>langages de programmation</b>. Ce dernier permet à l'ordinateur d'interpréter ces instructions et donc d'effectuer les actions demandées.</p>
+         </div>
+         <div class="bloc2_pres">
+            <p class="P2_pres">    
+               Un <b>langage de programmation</b> est une suite de mots de vocabulaire qui sera interprété par l'ordinateur de façon à ce que ce dernier exécute les actions demandées. 
+               Différents métiers en découlent tel que le métier de programmeur web, logiciel, le métier de testeur et pleins d'autres.
+               La programmation est un milieu <b>très vaste et très rigoureux</b>, la moindre erreur de syntaxe entraîne souvent <b>un bug qui finit par casser le programme.</b>
+            </p>
+            <img class="pres_icon" src="images/illustrations/programmer.png" alt="logo programmeur">"
+         </div>
+         <div class="bloc3_pres">
+            <p class="P3_pres"> 
+               Pour travailler dans le milieu de la programmation, plusieurs vois sont possibles : Bac STI2D, Bac S pour ensuite ce diriger vers un DUT, une licence générale ou professionnelle, une prépa ou même directement une école. Il existe différent métier en fonction de ses diplômes : <br>
+               <b>bac&nbsp;+3 : développeur web, développeur logiciel, testeur...<br>
+               bac&nbsp;+5 : ingénieur en informatique, ingénieur en programmation, cadre en informatique...<br>
+               bac&nbsp;+7 : chercheur, professeur chercheur en informatique...</b>
+            </p>
+            <div class="anecdote">
+               <center class="anecdote_titre"> Anecdote</center>
+               <p class="anecdote_p">Le langage de programmation Python a été créé par Guido van Rossum en 1991. Contrairement à ce que son logo pourrait laisser croire, le nom Python ne vient pas du serpent éponyme mais de la série Monty Python's Flying Circus dont le créateur était fan.</p>
+            </div>
+         </div>
+         <div class="bloc4_pres">
+            <p> Tu souhaites travailler dans le monde de la programmation ? <br> <b>Va voir notre fiche métier : </b></p>
+            <a href="fiche_prog.html">
+               <div class="pres_fichePROG"></div>
+            </a>
+         </div>
+      </div>
+
+      <footer>
+          <a href="#body" class="bouton">Retour en haut</a>
+          <div>
+           <section>
+              <ul>
+                <a href="presentation_prog.html"><li>Programmation</li></a>
+                <a href="presentation_bd.html"><li>Bases de données</li></a>
+                <a href="presentation_web.html"><li>Web</li></a>
+              </ul>
+           </section>
+
+           <section>
+             <ul>
+                <a href="index.html">Accueil</a>
+                <a href="liste_metiers.html" class="indentation">Métiers</a>
+                <a href="actualites.html" class="indentation">Actualités</a>
+                <a href="qui_sommes_nous.html" class="indentation">Qui sommes-nous ?</a>
+                <a href="mentions_legales.html" class="indentation">Mentions légales</a>
+                <a href="sources.html" class="indentation">Nos sources</a>
+              </ul>
+           </section>
+
+           <section>
+              <p>
+                IUT LA ROCHELLE<br>
+                15 rue François de Vaux de Foletier<br>
+                17026 La Rochelle Cedex 1<br>
+                iut-communication@univ-lr.fr<br>
+                05 46 51 39 33
+              </p>
+           </section>
+          </div>
+
+          <a href="contact.html" class="contact">Contactez-nous !</a>
+
+          <p>Il est strictement interdit de copier et de distribuer le contenu de ce site sans l'accord express du propriétaire. <br>&copy 2019 - Tous droits réservés aux étudiants du département informatique de l'IUT de La Rochelle.</p>
+      </footer>
+   </body>
+</html>
